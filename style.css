@@ -343,3 +343,163 @@ nav a{
     margin-top: 10px;
 }
 
+                               /* Resposive site */
+
+                               
+/* Tablet / smaller laptop */            
+@media (max-width: 1000px) {
+    .main-container {
+        grid-template-columns: 280px 1fr;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .sidebar {
+        padding: 25px;
+    }
+
+    .main-content {
+        padding: 30px;
+    }
+}
+
+
+
+/* Mobile view — main important part */
+@media (max-width: 768px) {
+
+    .main-container {
+        display: block;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+        padding: 25px;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 25px;
+    }
+
+    /* Navigation */
+    #navigation {
+        margin-right: 0;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* Headings */
+    .heading {
+        font-size: 1.7rem;
+    }
+
+    /* Skills */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .item {
+        margin-top: 10px;
+        padding: 15px;
+    }
+
+    /* Education */
+    .degree {
+        font-size: 1rem;
+    }
+
+    /* Thought */
+    #thought p {
+        font-size: 16px;
+    }
+
+    /* Thanks */
+    .thanks {
+        padding: 50px 10px;
+    }
+
+    .thanks h2 {
+        font-size: 28px;
+    }
+}
+
+
+
+
+/* Small mobile — 480px */
+@media (max-width: 480px) {
+
+    .main-container {
+        padding: 10px;
+    }
+
+    .sidebar,
+    .main-content {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile h2 {
+        font-size: 1.3rem;
+    }
+
+    .value {
+        font-size: 14px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .item {
+        padding: 12px 5px;
+    }
+
+    .item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .item h3 {
+        font-size: 0.85rem;
+    }
+
+    .edfirst,
+    .edsecond {
+        padding-left: 25px;
+    }
+
+    .thanks h2 {
+        font-size: 24px;
+    }
+
+    .thanks p {
+        font-size: 14px;
+    }
+}
