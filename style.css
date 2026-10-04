@@ -28,6 +28,11 @@ body {
     padding: 40px;
     position: sticky;
     top: 40px;
+    transition: transform 0.3s ease;
+}
+
+.sidebar:hover{
+    transform: scale(1.02);
 }
 
 .main-content{
@@ -37,6 +42,8 @@ body {
     border-radius: 16px;
     padding: 40px;
 }
+
+
 
  .profile img {
     height: 120px;
@@ -149,7 +156,6 @@ nav a{
 
 /* about me */
 
-
 .heading {
     color: #e0e0e0;
     font-size: 2rem;
@@ -171,6 +177,12 @@ nav a{
 
 #about{
     margin-bottom: 40px;
+     transition: transform 0.3s ease, border-color 0.3s ease;
+}
+ 
+#about:hover{
+    transform: translateX(8px);
+    border-color: #00adb5;
 }
 
 /* Skill section */
@@ -213,6 +225,12 @@ nav a{
 
 #education{
     margin-top: 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+#education:hover{
+    transform: translateX(8px);
+    border-color: #00adb5;
 }
 
 
@@ -265,3 +283,63 @@ nav a{
     left: 5px;
     border: 2px solid #3a3a3a;
 }
+
+/* Thought */
+
+ #thought{
+    transition: transform 0.3s ease, border-color 0.3s ease;
+ }
+
+ #thought p{
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+    font-style: italic;
+    transition: transform 0.3s ease;
+ }
+
+ #thought p:hover{
+     transform: translateX(5px);
+ }
+
+ #thought:hover {
+    transform: translateX(8px);
+    border-color: #00adb5;
+}
+
+/* Thanks */
+.thanks {
+    text-align: center;
+    padding: 70px 20px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.thanks h2 {
+    font-size: 38px;
+    margin-bottom: 1px;
+    transition: letter-spacing 0.5s ease, transform 0.5s ease;
+}
+
+.thanks p {
+    font-size: 16px;
+    opacity: 0.7;
+    transition: opacity 0.5s ease;
+}
+
+.thanks span {
+    display: block;
+    width: 0;
+    height: 2px;
+    margin: 20px auto 0;
+    background: white;
+    box-shadow: 0 0 10px white;
+    transition: width 0.6s ease;
+}
+
+/* Copyright */
+.copyright{
+    margin-top: 10px;
+}
+
